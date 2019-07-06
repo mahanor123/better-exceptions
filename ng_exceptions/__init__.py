@@ -1,9 +1,9 @@
 """Beautiful and helpful exceptions
 
-Just set your `BETTER_EXCEPTIONS` environment variable. It handles the rest.
+Just set your `NG_EXCEPTIONS` environment variable. It handles the rest.
 
 
-   Name: better_exceptions
+   Name: ng_exceptions
  Author: Josh Junon
   Email: josh@junon.me
     URL: github.com/qix-/better-exceptions
@@ -61,6 +61,6 @@ def hook():
     patch_logging()
 
     if hasattr(sys, 'ps1'):
-        print('WARNING: better_exceptions will only inspect code from the command line\n'
-              '         when using: `python -m better_exceptions\'. Otherwise, only code\n'
+        print('WARNING: ng_exceptions will only inspect code from the command line\n'
+              '         when using: `python -m ng_exceptions\'. Otherwise, only code\n'
               '         loaded from files will be inspected!', file=sys.stderr)
